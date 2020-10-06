@@ -8,6 +8,7 @@ class CartsController < ApplicationController
     redirect_to items_path
   end
 
+  # Show method
   def show
     @items = @cart.retrieve_items
   end
