@@ -1,4 +1,5 @@
 class CartsController < ApplicationController
+  # Create method
   def create
     item = Item.find(params[:item_id])
     @cart.add_item(item.id)
